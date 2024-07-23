@@ -13,6 +13,9 @@
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit"
   },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.17.0",
     "@iconify-json/carbon": "^1.1.32",
@@ -32,8 +35,5 @@
     "pinia": "^2.1.7",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.17"
-  },
-  "dependencies": {
-    "xlsx": "^0.18.5"
   }
 }

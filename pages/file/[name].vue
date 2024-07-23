@@ -7,6 +7,10 @@ definePageMeta({
 const route = useRoute()
 const filename = route.params.name
 
+useHead({
+  title: filename,
+})
+
 const List = ref([])
 const index = useLocalStorage(filename, 0)
 const showAns = ref(false)
