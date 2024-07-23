@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   css: [
     '@unocss/reset/tailwind.css',
   ],
-
+  ssr: false,
   colorMode: {
     classSuffix: '',
   },
@@ -68,7 +68,6 @@ export default defineNuxtConfig({
     // For UnoCSS
     inlineStyles: false,
   },
-
   eslint: {
     config: {
       standalone: false,
