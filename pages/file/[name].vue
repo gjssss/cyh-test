@@ -1,6 +1,5 @@
 <script setup lang="js">
 import * as XLSX from 'xlsx'
-import { read, utils } from 'xlsx'
 
 definePageMeta({
   layout: 'home',
@@ -19,7 +18,7 @@ const item = computed(() => {
     return {}
 })
 
-const response = await fetch(`/api/getFile?name=${filename}`)
+const response = await fetch(`/data/${filename}`)
 const blob = await response.blob()
 // 创建一个FileReader来读取blob
 const reader = new FileReader()

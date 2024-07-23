@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = useFetch('/api/getList')
+const data = ref(['中建七局土木工程公司安全知识题库（5月发布）.xlsx'])
 </script>
 
 <template>
